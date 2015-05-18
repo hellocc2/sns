@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.18, created on 2015-05-18 15:05:03
+<?php /* Smarty version 2.6.18, created on 2015-05-18 15:46:06
          compiled from index.htm */ ?>
 <!DOCTYPE HTML>
 <html>
@@ -7,7 +7,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="<?php echo $this->_tpl_vars['media_url']; ?>
+/css/style.css" rel="stylesheet" type="text/css" media="all" />
     <!-- start js -->
     <script src="js/modernizr.custom.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -32,7 +33,8 @@
     </script>
     <!-- Add fancyBox main JS and CSS files -->
     <script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
-    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo $this->_tpl_vars['media_url']; ?>
+css/magnific-popup.css" rel="stylesheet" type="text/css">
     <script>
         $(document).ready(function() {
             $('.popup-with-zoom-anim').magnificPopup({
@@ -55,7 +57,8 @@
     <div class="wrap">
         <div class="header">
             <div class="logo">
-                <h1><a href="index.html"><img src="images/logo.png" alt=""/></a></h1>
+                <h1><a href="index.html"><img src="<?php echo $this->_tpl_vars['media_url']; ?>
+/images/logo.png" alt=""/></a></h1>
             </div>
             <div class="menu">
                 <ul>
@@ -159,7 +162,8 @@
             <div class="grids_of_2">
                 <div class="grid_1_of_2">
                     <div class="grid_pic">
-                        <img src="images/pic1.jpg" alt=""/>
+                        <img src="<?php echo $this->_tpl_vars['media_url']; ?>
+/images/pic1.jpg" alt=""/>
                     </div>
                     <div class="grid_text">
                         <h2>runner</h2>
@@ -168,7 +172,8 @@
                 </div>
                 <div class="grid_1_of_2">
                     <div class="grid_pic">
-                        <img src="images/pic2.jpg" alt=""/>
+                        <img src="<?php echo $this->_tpl_vars['media_url']; ?>
+/images/pic2.jpg" alt=""/>
                     </div>
                     <div class="grid_text">
                         <h2>velo</h2>
@@ -180,7 +185,8 @@
             <div class="grids_of_2">
                 <div class="grid_1_of_2">
                     <div class="grid_pic">
-                        <img src="images/pic3.jpg" alt=""/>
+                        <img src="<?php echo $this->_tpl_vars['media_url']; ?>
+/images/pic3.jpg" alt=""/>
                     </div>
                     <div class="grid_text">
                         <h2>harriers</h2>
@@ -189,7 +195,8 @@
                 </div>
                 <div class="grid_1_of_2">
                     <div class="grid_pic">
-                        <img src="images/pic4.jpg" alt=""/>
+                        <img src="<?php echo $this->_tpl_vars['media_url']; ?>
+/images/pic4.jpg" alt=""/>
                     </div>
                     <div class="grid_text">
                         <h2>striders</h2>
@@ -234,7 +241,8 @@
             </div>
             <div class="service_main">
                 <div class="service_pic">
-                    <img src="images/ser_pic.png" alt=""/>
+                    <img src="<?php echo $this->_tpl_vars['media_url']; ?>
+/images/ser_pic.png" alt=""/>
                 </div>
                 <div class="service_list">
                     <p>"The standard chunk of Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."</p>
@@ -285,7 +293,8 @@
                 <div class="span_1_of_2">
                     <div class="address">
                         <div class="span_1_of_2_pic">
-                            <img src="images/icon1.png" alt=""/>
+                            <img src="<?php echo $this->_tpl_vars['media_url']; ?>
+/images/icon1.png" alt=""/>
                         </div>
                         <div class="span_1_of_2_text">
                             <p>The Lorem Ipsum Dolor Sit,</p>
@@ -297,7 +306,8 @@
                     </div>
                     <div class="address">
                         <div class="span_1_of_2_pic">
-                            <img src="images/icon2.png" alt=""/>
+                            <img src="<?php echo $this->_tpl_vars['media_url']; ?>
+/images/icon2.png" alt=""/>
                         </div>
                         <div class="span_1_of_2_text">
                             <h3><a href="mailto:info@mycompany.com">info(at)mycompany.com </a><h3>
@@ -306,7 +316,8 @@
                     </div>
                     <div class="address">
                         <div class="span_1_of_2_pic">
-                            <img src="images/icon3.png" alt=""/>
+                            <img src="<?php echo $this->_tpl_vars['media_url']; ?>
+/images/icon3.png" alt=""/>
                         </div>
                         <div class="span_1_of_2_text">
                             <h4>01234 444 777<h4>
@@ -361,7 +372,8 @@
                     </ul>
                 </div>
                 <div class="logo1">
-                    <h1><a href="index.html"><img src="images/logo1.png" alt=""/></a></h1>
+                    <h1><a href="index.html"><img src="<?php echo $this->_tpl_vars['media_url']; ?>
+/images/logo1.png" alt=""/></a></h1>
                 </div>
                 <div class="copy">
                     <p class="link"><span>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></span></p>
