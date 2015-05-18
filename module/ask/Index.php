@@ -16,14 +16,14 @@ class index extends \Lib\common\Application{
   				$act = $params->act; //取得动作参数
   				$db = \Lib\common\Db::get_db();
   				//$db->debug=1;
-                $base_url = "index.php?module=task&action=TaskManage";
+                $base_url = "index.php?module=index&action=index";
   				/*
   				*此处根据动作参数不同进行获取预约信息，删除功能等
   				*/
   				switch ( $act )
   				{         
-  				          //编辑时取得预约信息
-  						case 'ajax_getTask':
+  				          //提交问题
+  						case 'post_ask':
   								$ajaxRes = array( 'status' => 0 );
   								$params_ajax = R::getParams();
   								$id = $params_ajax->id;
