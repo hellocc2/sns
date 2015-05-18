@@ -47,10 +47,7 @@ class Template{
 		$tpl->left_delimiter	= THEME_LEFT_DELIMITER;
 		$tpl->right_delimiter	= THEME_RIGHT_DELIMITER;
 
-	//	$tpl->register_prefilter('collect_header_links');
-        $actionName = $_SESSION['action_name'];
-        
-        $tpl->assign('action_name', $actionName);
+
 		$tpl->assign('HTTP', HTTP);
 		$tpl->assign('default_charset', DEFAULT_CHARSET);//--
 		$tpl->assign('root_url', ROOT_URL);
@@ -72,7 +69,7 @@ class Template{
 		$tpl->assign('Feature_img_url',CDN_UPLAN_URL.'feature/');
 		$tpl->assign('action',\Helper\RequestUtil::getParams('action'));
 		$tpl->assign('module',\Helper\RequestUtil::getParams('module'));
-        $tpl->assign('loginInfo', $_SESSION['phpCAS']);
+
 		
 		return self::$smarty = $tpl;        
     }
