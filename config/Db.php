@@ -3,11 +3,11 @@ namespace config;
 use PDO;
 class Db{
 	public static $default=array('driver'=>'mysql',
-						  'host'=>'192.168.11.17',
+						  'host'=>'127.0.0.1',
 						  'port'=>3306,
-						  'dbname'=>'milanoo',
-						  'dbuser'=>'milanoo',
-						  'dbpassword'=>'milanoo',
+						  'dbname'=>'company',
+						  'dbuser'=>'root',
+						  'dbpassword'=>'',
 						  'driveroptions'=>array(PDO::MYSQL_ATTR_INIT_COMMAND=>'SET NAMES \'UTF8\'')
 	
 	);

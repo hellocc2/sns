@@ -84,17 +84,20 @@
 <div class="work_bg">
     <div class="wrap">
         <div class="work" id="work">
+
             <ul>
+                {-foreach from=$infoData item=info-}
                 <li>
-                    <div><span>test1  ask:</span>jlskjfdlsflsjflsdf?</div>
+                    <div><span>test1  ask:</span>{-$info.question-}</div>
+                    <div><span>teacher  answer:</span>aaaaaaaaaaaaaaaaaaaaaaa!</div>
+                </li>
+                {-/foreach-}
+                <li>
+                    <div><span>test2  ask:</span>jlskjfdlsflsjflsdf?</div>
                     <div><span>teacher  answer:</span>aaaaaaaaaaaaaaaaaaaaaaa!</div>
                 </li>
                 <li>
-                    <div><span>test1  ask:</span>jlskjfdlsflsjflsdf?</div>
-                    <div><span>teacher  answer:</span>aaaaaaaaaaaaaaaaaaaaaaa!</div>
-                </li>
-                <li>
-                    <div><span>test1  ask:</span>jlskjfdlsflsjflsdf?</div>
+                    <div><span>test3  ask:</span>jlskjfdlsflsjflsdf?</div>
                     <div><span>teacher  answer:</span>aaaaaaaaaaaaaaaaaaaaaaa!</div>
                 </li>
 
@@ -103,9 +106,9 @@
         </div>
     </div>
 
-    <div id="form" >
-        <form id="add_qa" action=''{-rewrite url="?module=ask&action=index"-}' method="POST" novalidate="novalidate">
-            <input type="hidden" name="tabClass" value="qa">
+    <div id="form">
+        <form id="add_qa" action="" method="POST" novalidate="novalidate">
+            <input type="hidden" name="act" value="qa_add">
             <table cellpadding="5" cellspacing="0">
                 <tbody>
                 <tr>

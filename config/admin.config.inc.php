@@ -7,3 +7,4 @@ if (!defined('PAGE')) define('PAGE', '15');//每页显示默认数据的默认�
 if (!defined('JAVASCRIPT_URL')) define('JAVASCRIPT_URL', ROOT_URL.'javascript/');//javascript的url地址
 if (!defined('IMG_SERVER_ROOT')) define('IMG_SERVER_ROOT','uploads_url');//图片服务器及图片存放的根目录
 if (!defined('POPUP_URL')) define('POPUP_URL', ROOT_URL.'popup/');//弹出层插件的url地址
+if (!defined('DB_PRE')) define('DB_PRE', 'co_');//数据库前缀

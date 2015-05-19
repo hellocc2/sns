@@ -38,13 +38,13 @@
                           //单独删除      
                         case 'delSingle':
                                 $params_del = R::getParams();
-                                $ajaxDel = array('status'=>0);
+                            $ajaxRes = array('status'=>0);
                                 $id = $params_del->id;
                                 if(!empty($id)){                                                                            
                                         $sql_del_s = "UPDATE milanoo.milanoo_sns_event_detail SET data_status = 1 WHERE id = '{$id}' ";
                                         if($db->Execute( $sql_del_s )){
-                                            $ajaxDel = array('status'=>1);
-                                            echo json_encode( $ajaxDel);
+                                            $ajaxRes = array('status'=>1);
+                                            echo json_encode( $ajaxRes);
                                             exit();
                                     }
                                 }
