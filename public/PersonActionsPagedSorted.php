@@ -18,7 +18,7 @@ if (is_file ( $file_promotion )) {
 
 try {
 	// Open database connection
-	$con = mysql_connect ( $db_config ['host'].":".$db_config ['port'], $db_config ['dbuser'], $db_config ['dbpassword']);
+	$con = mysqli_connect ( $db_config ['host'].":".$db_config ['port'], $db_config ['dbuser'], $db_config ['dbpassword']);
 	mysql_set_charset("utf8", $con);
 	mysql_query('SET NAMES utf8');
 	mysql_select_db ( "web_statis", $con );

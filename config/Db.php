@@ -5,7 +5,7 @@ class Db{
 	public static $default=array('driver'=>'mysql',
 						  'host'=>'127.0.0.1',
 						  'port'=>3306,
-						  'dbname'=>'company',
+						  'dbname'=>'test',
 						  'dbuser'=>'root',
 						  'dbpassword'=>'',
 						  'driveroptions'=>array(PDO::MYSQL_ATTR_INIT_COMMAND=>'SET NAMES \'UTF8\'')
