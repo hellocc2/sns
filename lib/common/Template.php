@@ -46,7 +46,7 @@ class Template{
 		$tpl->compile_dir		= THEME_COMPILE_ROOT_PATH."/default/";
 		$tpl->left_delimiter	= THEME_LEFT_DELIMITER;
 		$tpl->right_delimiter	= THEME_RIGHT_DELIMITER;
-
+	
 
 		$tpl->assign('HTTP', HTTP);
 		$tpl->assign('default_charset', DEFAULT_CHARSET);//--
